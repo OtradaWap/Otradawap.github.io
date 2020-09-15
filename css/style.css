@@ -1,0 +1,65 @@
+* {border-radius:5px;} 
+
+body {
+text-align:center;
+max-width: 548px;
+margin: auto;
+font: 16px verdana, arial, helvetica, sans-serif;
+line-height:1.5;
+background:#564630 url(/sis/fon.jpg);
+background-attachment: fixed;
+color:#191919;
+} 
+
+h1 {margin:0px; padding:5px; font-size:14px; font-weight:normal;} 
+
+hr {margin:5px; padding:5px; background:#aaa;} 
+
+br {margin-top: 1em; margin-bottom: 1em}
+
+a:link {color:#161a62; text-decoration:none}
+a:hover {text-decoration:underline}
+
+.str {padding:10px; background:#dcdcdc; border: 1px solid #aaa;}
+
+header {padding:10px; background:#668db4; border: 1px solid #000080;}
+
+main {}
+
+.glav {padding:10px; background:#dcdcdc;}
+.glavmin {line-height:1.1; font-size:0.7em;}
+
+footer {
+padding:10px;
+line-height:1.0; 
+background:#9c956a; 
+border: 1px solid #44321a;
+
+}
+footer a {color:#2a200d;}
+.niz {margin:5px}
+
+.keliya {
+border: 1px solid #000080; 
+background: #ced0d4;
+}
+.keliya a:link {
+border: 1px solid #000080; 
+font-size: 1.1em;
+padding: 0px 5px;
+}
+.keliya a:hover {
+text-decoration: none;
+}
+
+.keliyatable {
+border: 1px solid #000080; 
+background: #ced0d4;
+text-align: center;
+margin: auto;
+padding: 15px;
+}
+.keliyath {
+border: 1px solid #000080;
+padding: 15px;
+}
