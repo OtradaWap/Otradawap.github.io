@@ -6,26 +6,6 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="stylesheet" href="/css/style.css">
-  
-  <script>
-    var State = 1;
-    function triger(href) {
-      if (State == 1) {
-         if(href!='') {  /* если  равен пустой строке */
-          document.getElementById('mus').innerHTML="<EMBED type=application/x-mplayer2 src="+href+" width=1 height=1>"; /* загружаем плеер, если ширина и высота равны 0 - не работает*/
-          document.forms["foto_inter"].getElementsByTagName("IMG")[0].src='выключенно.png';  /* меняем изображение */
-          document.getElementById('name').innerHTML = 'Depeche Mode';    /* меняем текст */
-          }
-        State = 0;
-      } else {
-          document.getElementById('mus').innerHTML="";
-          document.forms["foto_inter"].getElementsByTagName("IMG")[0].src='включить.png';  /* меняем изображение */
-          document.getElementById('name').innerHTML = '';      /* меняем текст */
-        State = 1;
-      }
-    }
-    </script>
-  
 </head>
 
 <body>
@@ -44,14 +24,12 @@
 <h1>Православное радио Воскресение</h1>
 Html 5 player качество .mp3
 <p>
-<div id="blok">
-  <form name="foto_inter">
-    <a href="#" onclick="triger('http://217.24.181.164:8000/stream.mp3');" >   <!--адрес потока -->
-      <img id="img" src="включить.png" width="37" height="37" border="no">  <!--картинка в качестве кнопки  -->
-    </a>
-  </form>
-  <p id="name">Вкл. радио ?</p>
-</div>
+<object id="MediaPlayer1" classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" standby="Loading Microsoft Windows Media Player components..." type="application/x-oleobject" width="500" height="49"> 
+   
+<param name="Filename" value="http://94.25.53.133/nashe-192.m3u"> <param name="ShowPositionControls" value="False"> <param name="ShowStatusBar" value="True"> 
+ 
+<embed src="http://94.25.53.133/nashe-192.m3u" showstatusbar="1" showcontrols="1" showdisplay="0" type="video/x-ms-asf" width="500" height="49"></object>
+
 </p>
 
 <p>
