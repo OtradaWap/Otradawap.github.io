@@ -35,7 +35,12 @@ border: 1px solid #aaa;
 font-size:0.8em;
 }
 
-.glav {padding:10px; background:#dcdcdc;}
+.glav {
+padding:10px; 
+background:#e5e5e5;
+border: 1px solid #aaa;
+}
+
 .glavmin {
 line-height:1.1;
 font-size:0.7em; 
