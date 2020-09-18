@@ -6,11 +6,6 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="stylesheet" href="/css/style.css">
-
-<script type="text/javascript" src="//playercdn.cdnvideo.ru/aloha/clappr/clappr5.min.js"></script>
-<script type="text/javascript" src="//playercdn.cdnvideo.ru/aloha/clappr/level-selector.min.js"></script>
-<script type="text/javascript" src="//playercdn.cdnvideo.ru/aloha/clappr/clappr-error-handler.min.js"></script>
-
 </head>
 
 <body>
@@ -31,28 +26,7 @@
 <h1>Православный тв Союз</h1>
 
 <p>
-<script>
-                            document.write('<div id="player"></div>');
-
-	    		
-                var player = new Clappr.Player({
-                    language: 'en-EN',
-                    parentId: "#player",
-                     source: "//hls-tvsoyuz.cdnvideo.ru/tvsoyuz/soyuz/playlist.m3u8",                     width: '99%',                     height: '',                     autoPlay: true,          mediacontrol: {
-                                                                    },
-                    plugins: [
-                                                                                                                                                LevelSelector,                                                                                                                                                                                                                        ClapprErrorHandler,                    ],
-		    playback: {
-		                        		    },
-                                                                                    levelSelectorConfig: {
-                                                                                    labelCallback: function(playbackLevel) {
-                                return playbackLevel.level.height+'p';
-                            }
-                        },
-                                                                                                                                                                		    		    	clapprErrorHandler: {
-												text: 'There is no broadcast now. Please come back later.',											},
-		                    });
-                 player.setVolume(80);                 player.startVolume = 80;                		                    </script>
+<iframe src="https://tv-soyuz.ru/tvprogramma" width="99%" height="500"></iframe>
 </p>
 
 <p><img src="/img/home.svg" alt="+"> <a href="/">Главъ</a></p>
