@@ -5,5 +5,23 @@ DirectoryIndex index.html
 AddDefaultCharset UTF-8
 Options -Indexes
 
-ErrorDocument 403 /
-ErrorDocument 404 /
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+# Переадресация index.html на заглавную
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://Otrada.pp.ua/ [R=301,L]
+
+# Скрытие расширений .html
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+
+
+# мои ограничения на файлы
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www.)?otrada\.pp.ua/.*$ [NC]
+RewriteRule .(jpg|gif|png|css|jar|jad|apk|zip|txt)$ - [F]
+
