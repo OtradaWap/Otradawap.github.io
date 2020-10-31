@@ -8,8 +8,11 @@ Options -Indexes
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
 
-# Скрытие расширений .html
-RewriteEngine on
+# Скрытие расширений главной .html
+RewriteEngine On
+RewriteRule ^index\.html$ / [R=301,L] 
+
+RewriteEngine On
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L] 
 
