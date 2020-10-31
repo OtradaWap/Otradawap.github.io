@@ -8,11 +8,6 @@ Options -Indexes
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
 
-# Переадресация index.html на заглавную
-RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ http://Otrada.pp.ua/ [R=301,L]
-
 # Скрытие расширений .html
 RewriteEngine on
 RewriteRule ^index\.html$ / [R=301,L]
