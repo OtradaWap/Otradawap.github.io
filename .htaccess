@@ -15,9 +15,8 @@ RewriteRule ^index\.html$ http://Otrada.pp.ua/ [R=301,L]
 
 # Скрытие расширений .html
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L] 
 
 
 # мои ограничения на файлы
